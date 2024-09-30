@@ -29,5 +29,5 @@
 
 
 <script language="javascript">
-    window.open("index.html","_self");
+    window.open("https://akazaintl.com","_self");
 </script>

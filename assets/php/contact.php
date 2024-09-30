@@ -14,7 +14,7 @@
     $txt = "You Have Recive New Mail.\n Name : ".$name.".\n"$lastName".\n Email : ".$email. ".\n Subject : ".$subject. ".\n Message : ".$message. "\n Contact:" .$phone;
 
     mail($mailTo,"New Entry Seva Kalyan Website : $name", $txt, $headers);
-   //header("location:index.html");
+   //header("location:https://akazaintl.com");
    
    //$htmlContent = file_get_contents("mail.html");
    
@@ -25,5 +25,5 @@
 ?>
 
 <script language="javascript">
-    window.open("../index.html","_self");
+    window.open("../https://akazaintl.com","_self");
 </script>

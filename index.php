@@ -825,7 +825,7 @@
           <div class="row align-items-center">
             <div class="col-sm-12 col-md-5 col-lg-5">
               <div class="footer__copyrights">
-                <a href="index.html" target="blank">Akaza</a> © 2021. All Right Reserved. Developed By <a
+                <a href="index.html" target="blank">Akaza</a> © 2024. All Right Reserved. Developed By <a
                   href="http://www.keryar.com/" target="_blank">Keryar.</a>
               </div>
             </div><!-- /.col-lg-6 -->

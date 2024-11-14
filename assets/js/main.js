@@ -279,4 +279,43 @@ $(function () {
     $(".portfolio-filter li a").on("click", function (e) {
         e.preventDefault();
     });
+
+
+});
+document.getElementById('contactForm').addEventListener('submit', function (e) {
+    const nameField = document.getElementById('contact-name');
+    const phoneField = document.getElementById('contact-phone');
+    const emailField = document.getElementById('contact-email');
+
+    let isValid = true;
+
+    // Name Validation
+    if (!nameField.value) {
+        document.getElementById('nameError').style.display = 'block';
+        isValid = false;
+    } else {
+        document.getElementById('nameError').style.display = 'none';
+    }
+
+    // Phone Validation
+    const phonePattern = /^[0-9]{10,15}$/;
+    if (!phoneField.value.match(phonePattern)) {
+        document.getElementById('phoneError').style.display = 'block';
+        isValid = false;
+    } else {
+        document.getElementById('phoneError').style.display = 'none';
+    }
+
+    // Email Validation
+    if (!emailField.validity.valid) {
+        document.getElementById('emailError').style.display = 'block';
+        isValid = false;
+    } else {
+        document.getElementById('emailError').style.display = 'none';
+    }
+
+    // Prevent form submission if validation fails
+    if (!isValid) {
+        e.preventDefault();
+    }
 });

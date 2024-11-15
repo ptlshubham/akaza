@@ -201,30 +201,28 @@
                 </div>
                 <div class="col-sm-6 col-md-6 col-lg-6">
                   <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Name" id="contact-name" name="contact-name"
-                      required>
+                    <input type="text" class="form-control" placeholder="Name" id="name" name="name" required>
                     <small class="text-danger" style="display:none;" id="nameError">Name is required.</small>
                   </div>
                 </div>
                 <div class="col-sm-6 col-md-6 col-lg-6">
                   <div class="form-group">
-                    <input type="email" class="form-control" placeholder="Email" id="contact-email" name="contact-email"
-                      required>
+                    <input type="email" class="form-control" placeholder="Email" id="email" name="email" required>
                     <small class="text-danger" style="display:none;" id="emailError">Please enter a valid email.</small>
                   </div>
                 </div>
                 <div class="col-sm-12 col-md-12 col-lg-12">
                   <div class="form-group">
-                    <input type="number" class="form-control" placeholder="Phone" id="contact-phone"
-                      name="contact-phone" required pattern="^[0-9]{10,15}$">
+                    <input type="number" class="form-control" placeholder="Phone" id="contact" name="contact" required
+                      pattern="^[0-9]{10,15}$">
                     <small class="text-danger" style="display:none;" id="phoneError">Please enter a valid Phone
                       number.</small>
                   </div>
                 </div>
                 <div class="col-12">
                   <div class="form-group mb-20">
-                    <textarea class="form-control" placeholder="Additional Details!" id="contact-message"
-                      name="contact-message"></textarea>
+                    <textarea class="form-control" placeholder="Additional Details!" id="message"
+                      name="message"></textarea>
                   </div>
                   <button type="submit" class="btn btn__primary btn__xhight mt-10">Submit Request</button>
                   <div class="contact-result"></div>
